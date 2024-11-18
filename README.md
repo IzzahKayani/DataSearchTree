@@ -31,3 +31,4 @@ Category: Phone Cases
 Price: $11.59
 
 Performance Analysis: 
+While this red-black tree's search function is written the same as an elementary binary tree, it ultimately runs faster due to it's branches having a better balance. Since red-black trees are approximately balanced, no leaf is more than twice the length as another leaf. Consequently, no node has a depth more than 2log(N), where N is the number of nodes in a tree.  
