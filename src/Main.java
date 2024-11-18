@@ -51,10 +51,15 @@ public class Main
         }
         sc.close();
 
-        //lets the user search for an id three times
-        search(rbt, user);
-        search(rbt, user);
-        search(rbt, user);
+        //lets the user search for an id
+        System.out.print("\nWould you like to search? (y/n): ");
+        String input = user.nextLine();
+        while (!input.equals("n"))
+        {
+            search(rbt, user);
+            System.out.print("\nWould you like to search? (y/n): ");
+            input = user.nextLine();
+        }
         user.close();
 
         // Inserting a duplicate id
