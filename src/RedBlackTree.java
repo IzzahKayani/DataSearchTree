@@ -67,7 +67,7 @@ public class RedBlackTree <Key extends Comparable<Key>, Value>
             h.left = insert(h.left, key, value);
         else if(cmp > 0)
             h.right = insert(h.right, key, value);
-        else
+        else // if the key already exists within the tree, prints out an error stating the product already exists
             System.out.println("Error: user ID already exists");
 
         //fixes any incorrect red links
@@ -90,6 +90,7 @@ public class RedBlackTree <Key extends Comparable<Key>, Value>
         return h.color == RED;
     }
 
+    // when two left nodes in a row are red
     private Node rotateRight(Node h)
     {
         assert (h != null) && isRed(h.left);
@@ -101,6 +102,7 @@ public class RedBlackTree <Key extends Comparable<Key>, Value>
         return x;
     }
 
+    // when a right child is red
     private Node rotateLeft(Node h)
     {
         assert (h != null) && isRed(h.right);
