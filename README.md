@@ -30,7 +30,7 @@ Name: IPhone 13 Case
 Category: Phone Cases 
 Price: $11.59
 
-Performance Analysis: 
+Performance and Scalability Overview: 
 While this red-black tree's search function is written the same as an elementary binary tree, it ultimately runs faster due to it's branches having a better balance. Since red-black trees are approximately balanced, no 
 leaf is more than twice the length as another leaf. Consequently, no node has a depth more than 2log(N), where N is the number of nodes in a tree. This makes the runtime for search and insert both Olog(N), where time goes 
 up linearly while N goes up exponentially. In this program, the tree handles around 10,000 nodes efficiently through it's insertion following the rules of a left leaning red-black tree. These rules mainly being that there 
